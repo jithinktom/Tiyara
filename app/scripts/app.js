@@ -19,7 +19,7 @@ angular
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/root/home');
         // $locationProvider.html5Mode({
         //     enabled: true,
         //     requireBase: false
@@ -35,19 +35,29 @@ angular
                     }
                 }
             })
-            .state('root.home', {
-                url: '/home',
+            .state('root.default', {
+                url: '/root',
+                abstract: true,
                 views: {
                     'header': {
                         templateUrl: 'views/header.html',
                         controller: 'HeaderCtrl'
                     },
                     'page': {
-                        templateUrl: 'views/home.html',
+                        templateUrl: 'views/root-layout.html',
                     },
                     'footer': {
                         templateUrl: 'views/footer.html',
                         controller: 'FooterCtrl'
+                    }
+                }
+            })
+            .state('root.default.home', {
+                url: '/home',
+                views: {
+                    'content': {
+                        templateUrl: 'views/home.html',
+                        controller: 'HomeCtrl'
                     }
                 }
             })
