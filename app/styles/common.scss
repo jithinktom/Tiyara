@@ -1,0 +1,43 @@
+$white: #fff;
+$black: #000;
+$primary: #4A148C;
+$hue-1: #9C27B0;
+$hue-2: #6A1B9A;
+$hue-3:#AA00FF;
+$accent:#D81B60;
+$warn:  #D32F2F;
+$font-14: 14px;
+$font-13: 13px;
+$font-12: 12px;
+
+    
+button, select, html, textarea, input {
+    font-family: "PremierSans-Regular";
+}
+
+.pull-left {
+    float:left;
+}
+.pull-right {
+    float: right;
+}
+
+md-input-container {
+    input, label {
+        font-size: $font-13;
+    }
+}
+.dark {
+    button {
+        color: $white;
+    }
+    md-input-container,  md-input-container.md-input-focused{
+        label {
+            color: $white;
+        }
+        input {
+            color: $white;
+            border-bottom: 1px solid $white;
+        }
+    }
+}

@@ -61,4 +61,19 @@ angular
                     }
                 }
             })
+    })
+    .config(function ($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+            .primaryPalette('purple', {
+                'default': '900',
+                'hue-1': '500', // use shade 100 for the <code>md-hue-1</code> class
+                'hue-2': '800', // use shade 600 for the <code>md-hue-2</code> class
+                'hue-3': 'A700'
+            })
+            .accentPalette('pink', {
+                'default': '600'
+            })
+            .warnPalette('red', {
+                'default': '700'
+            });
     });
