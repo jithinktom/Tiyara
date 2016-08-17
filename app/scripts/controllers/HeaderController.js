@@ -8,6 +8,6 @@
  * Controller of the tiyaraApp
  */
 angular.module('tiyaraApp')
-    .controller('HeaderCtrl', function () {
-        console.log("Header!")
+    .controller('HeaderCtrl', function ($scope) {
+        
     });

@@ -1,10 +1,12 @@
-<md-toolbar class="header dark" layout="row">
-    <div class="md-toolbar-tools">
-        <md-button aria-label="Go Back">
-            Logo
-        </md-button>
+<md-toolbar class="header dark">
+    <div class="md-toolbar-tools" layout="row" layout-sm="column">
+        <div>
+            <md-button aria-label="Go Back" flex-sm="30">
+                Logo
+            </md-button>
+        </div>
         <span flex></span>
-        
+        <div layout="row">
             <md-input-container>
                 <label>Email</label>
                 <input ng-model="user.email">
@@ -14,7 +16,8 @@
                 <input ng-model="user.password">
             </md-input-container>
 
-        
-        <md-button class="md-accent md-raised">Login</md-button>
+            <md-button class="md-accent md-raised">Login</md-button>
+            <!--<md-button class="md-accent font-11">Forgot Password</md-button>-->
+        </div>
     </div>
 </md-toolbar>

@@ -15,7 +15,8 @@ angular
         'ngResource',
         'ngSanitize',
         'ui.router',
-        'ngMaterial'
+        'ngMaterial',
+        'ngMessages'
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 

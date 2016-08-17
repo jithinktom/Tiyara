@@ -9,17 +9,48 @@ $warn:  #D32F2F;
 $font-14: 14px;
 $font-13: 13px;
 $font-12: 12px;
+$font-11: 11px;
 
     
 button, select, html, textarea, input {
     font-family: "PremierSans-Regular";
+    color: #333333;
 }
+
+.font-14{  font-size:14px;}
+.font-13{  font-size:13px;}
+.font-12{  font-size:12px;}
+.font-11{  font-size:11px;}
 
 .pull-left {
     float:left;
 }
 .pull-right {
     float: right;
+}
+.m-r-5 {
+    margin-right: 5px;
+}
+.relative {
+    position: relative;
+}
+.wrapper {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+b, strong {
+    font-family: "PremierSans-Bold",Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+a {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+        color: $hue-2;
+        text-decoration: underline;
+    }
 }
 
 md-input-container {
@@ -33,11 +64,43 @@ md-input-container {
     }
     md-input-container,  md-input-container.md-input-focused{
         label {
-            color: $white;
+            color: $white!important;
         }
         input {
             color: $white;
             border-bottom: 1px solid $white;
         }
     }
+}
+.line-overlay {
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background-image: url(../images/black-twill.png);
+    background-color: #000;
+    background-attachment: fixed;
+}
+.dot-overlay {
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    background-image: url(../images/dot-pattern.png);
+    background-color: #000;
+    background-attachment: fixed;
+}
+.divider {
+    display: block;
+    border-top-width: 1px;
+    border-top-style: solid;
+    margin: 10px 0;
+    border-top-color: rgba(0,0,0,0.12);
+    position: relative;
 }

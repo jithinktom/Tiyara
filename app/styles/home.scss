@@ -1,0 +1,118 @@
+md-grid-list {
+  margin: 1px; 
+   md-grid-tile {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow: hidden;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+        
+        figure {
+            background-image: url(../images/black-twill.png);
+            background-color: #000;
+            background-attachment: fixed;
+            opacity: 0.3;
+        }
+  }
+  .green {
+      background-color: rbga(0,0,0, 0.5);
+  }
+}
+.home-grid {
+    position: relative;
+}
+.unblur {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    figure {
+        background: none;
+    }
+}
+.join-popup {
+    position: absolute;
+    width: 335px;
+    top: 80px;
+    background: #FFF;
+    left: 20%;
+    border-radius: 10px;
+    md-content {
+        padding: 10px 40px 35px 40px;
+        border-radius: 0 0 10px 10px;
+    }
+    md-input-container {
+        margin: 5px 0;
+        
+        button {
+            min-height: 45px;
+            text-transform: capitalize;
+        }
+    }
+    h3 {
+        margin: 15px 0;
+        font-size: 22px;
+        font-family: "PremierSans-Bold";
+    }
+    p {
+        font-size: 12px;
+    }
+    .divider {
+        span {
+            position: absolute;
+            left: 50%;
+            top: -9px;
+            background: #fff;
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 12px;
+            margin-left: -7px;
+            color: rgba(0,0,0,0.5);
+        }
+    }
+}   
+.login-with-fb, .login-with-google, .login-with-instagram, .login-with-email{
+    width: 100%;
+    margin: 6px 0;
+    color: #FFF;
+}
+.login-with-fb {
+    background-color: #3b5998;
+}
+.hide {
+    display: none;
+}
+.login-with-fb:hover {
+    opacity: 0.8;
+    color: #FFF;
+     background-color: #3b5998!important;
+}
+.login-with-google {
+    background-color: #dd4b39;
+}
+.login-with-google:hover {
+    opacity: 0.8;
+    color: #FFF;
+    background-color: #dd4b39!important;
+}
+.login-with-instagram {
+   background-color: #3f729b;
+}
+.login-with-instagram:hover {
+    opacity: 0.8;
+    color: #FFF;
+    background-color: #3f729b!important;
+}
+.login-with-email {
+    background-color: #4A148C;
+}
+.login-with-email:hover {
+    opacity: 0.8;
+    color: #FFF;
+    background-color: #4A148C!important;
+}
